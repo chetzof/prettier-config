@@ -16,7 +16,8 @@
     "project": "./tsconfig.dev.json"
   },
   "extends": [
-    "plugin:import/typescript"
+    "plugin:import/typescript",
+    "./node_modules/chetzof-lint-config/eslint/index.js"
   ],
   "settings": {
     "import/parsers": {

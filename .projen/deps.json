@@ -1,6 +1,10 @@
 {
   "dependencies": [
     {
+      "name": "@chetzof/projen-base",
+      "type": "build"
+    },
+    {
       "name": "@swc/core",
       "type": "build"
     },
@@ -38,10 +42,6 @@
     {
       "name": "eslint",
       "version": "^8",
-      "type": "build"
-    },
-    {
-      "name": "file:../projen-base/",
       "type": "build"
     },
     {

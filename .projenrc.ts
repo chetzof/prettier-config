@@ -1,8 +1,8 @@
 import { CustomTypescriptProject } from "@chetzof/projen-base";
 const project = new CustomTypescriptProject({
   defaultReleaseBranch: "main",
-  devDeps: ["file:../projen-base/"],
-  name: "chetzof-prettier-config",
+  devDeps: ["@chetzof/projen-base"],
+  name: "@chetzof/prettier-config",
   projenrcTs: true,
 
   // deps: [],                /* Runtime dependencies of this module. */

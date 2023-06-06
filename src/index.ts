@@ -1,5 +1,7 @@
-export class Hello {
-  public sayHello() {
-    return 'hello, world!';
-  }
+export default {
+  singleQuote: true,
+  semi: false,
+  printWidth: 80,
+  trailingComma: 'all',
+  vueIndentScriptAndStyle: true,
 }
