@@ -78,7 +78,7 @@
       "description": "Only compile",
       "steps": [
         {
-          "exec": "cp src/index.js  lib/index.js"
+          "exec": "mkdir lib &&  cp src/index.js  lib/index.js"
         }
       ]
     },

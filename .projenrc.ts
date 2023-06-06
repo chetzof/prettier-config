@@ -9,5 +9,5 @@ const project = new CustomTypescriptProject({
   mutableBuild: true,
   peerDeps: ['prettier'],
 });
-project.compileTask.reset(`cp src/index.js  ${project.libdir}/index.js`)
+project.compileTask.reset(`mkdir ${project.libdir} &&  cp src/index.js  ${project.libdir}/index.js`)
 project.synth();
