@@ -6,10 +6,8 @@ const project = new CustomTypescriptProject({
   name: "@chetzof/prettier-config",
   projenrcTs: true,
   releaseToNpm: true,
-  mutableBuild: true
-
-  // deps: [],                /* Runtime dependencies of this module. */
-  // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
-  // packageName: undefined,  /* The "name" in package.json. */
+  mutableBuild: true,
+  peerDeps: ['prettier'],
 });
+project.compileTask.reset(`cp src/index.js  ${project.libdir}/index.js`)
 project.synth();

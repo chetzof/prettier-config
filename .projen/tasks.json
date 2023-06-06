@@ -78,7 +78,7 @@
       "description": "Only compile",
       "steps": [
         {
-          "exec": "tsc --build"
+          "exec": "cp src/index.js  lib/index.js"
         }
       ]
     },
