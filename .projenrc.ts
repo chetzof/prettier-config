@@ -1,4 +1,4 @@
-import { CustomTypescriptProject } from "@chetzof/projen-base";
+import { CustomTypescriptProject } from "@chetzof/projen-base"
 const project = new CustomTypescriptProject({
   defaultReleaseBranch: "main",
   devDeps: ["@chetzof/projen-base"],
