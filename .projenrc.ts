@@ -8,9 +8,13 @@ const project = new CustomTypescriptProject({
   releaseToNpm: true,
   mutableBuild: true,
   peerDeps: ['prettier'],
+  depsUpgradeOptions: {
+    exclude: ['@chetzof/projen-base', 'projen'],
+  },
 })
 project.compileTask.reset(
   `mkdir ${project.libdir} &&  cp src/index.js  ${project.libdir}/index.js`,
 )
 project.package.addField('prettier', './src/index.js')
+project.deps.removeDependency('@chetzof/prettier-config')
 project.synth()
