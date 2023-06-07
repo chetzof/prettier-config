@@ -17,4 +17,5 @@ project.compileTask.reset(
 )
 project.package.addField('prettier', './src/index.js')
 project.deps.removeDependency('@chetzof/prettier-config')
+
 project.synth()
