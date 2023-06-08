@@ -1,7 +1,7 @@
 {
   "dependencies": [
     {
-      "name": "@chetzof/projen-base",
+      "name": "@chetzof/prettier-config",
       "type": "build"
     },
     {
@@ -24,7 +24,15 @@
       "type": "build"
     },
     {
-      "name": "chetzof-lint-config",
+      "name": "@vladcos/eslint-config",
+      "type": "build"
+    },
+    {
+      "name": "@vladcos/projen-base",
+      "type": "build"
+    },
+    {
+      "name": "@vladcos/tsconfig",
       "type": "build"
     },
     {
@@ -41,10 +49,6 @@
     },
     {
       "name": "eslint-plugin-import",
-      "type": "build"
-    },
-    {
-      "name": "eslint-plugin-prettier",
       "type": "build"
     },
     {
