@@ -1,10 +1,6 @@
 {
   "dependencies": [
     {
-      "name": "@chetzof/prettier-config",
-      "type": "build"
-    },
-    {
       "name": "@swc/core",
       "type": "build"
     },
