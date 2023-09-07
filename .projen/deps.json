@@ -35,7 +35,7 @@
     },
     {
       "name": "alias-hq",
-      "version": "6",
+      "version": "^6",
       "type": "build"
     },
     {
@@ -44,10 +44,6 @@
     },
     {
       "name": "eslint-import-resolver-typescript",
-      "type": "build"
-    },
-    {
-      "name": "eslint-plugin-import",
       "type": "build"
     },
     {
@@ -62,12 +58,12 @@
     },
     {
       "name": "packemon",
-      "version": "3",
+      "version": "^3",
       "type": "build"
     },
     {
       "name": "prettier",
-      "version": "3",
+      "version": "^3",
       "type": "build"
     },
     {
@@ -85,12 +81,12 @@
     },
     {
       "name": "tsconfig-paths",
-      "version": "4",
+      "version": "^4",
       "type": "build"
     },
     {
       "name": "tsx",
-      "version": "3",
+      "version": "^3",
       "type": "build"
     },
     {
