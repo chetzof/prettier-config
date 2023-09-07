@@ -1,13 +1,14 @@
-import { CustomTypescriptProject } from '@vladcos/projen-base'
+import { TypeScriptProject } from '@vladcos/projen-base'
 
-const project = new CustomTypescriptProject({
+const project = new TypeScriptProject({
   defaultReleaseBranch: 'main',
+  deps: ['prettier'],
   devDeps: ['@vladcos/projen-base'],
   name: '@vladcos/prettier-config',
   projenrcTs: true,
   releaseToNpm: true,
   mutableBuild: true,
-  peerDeps: ['prettier'],
+  packemon: false
 })
 project.compileTask.reset(
   `mkdir ${project.libdir} &&  cp src/index.js  ${project.libdir}/index.js`,
