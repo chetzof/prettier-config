@@ -26,7 +26,7 @@
     "@typescript-eslint/eslint-plugin": "^6",
     "@typescript-eslint/parser": "^6",
     "@vladcos/eslint-config": "latest",
-    "@vladcos/projen-base": "^0.0.107",
+    "@vladcos/projen-base": "^0.0.114",
     "@vladcos/tsconfig": "latest",
     "alias-hq": "^6",
     "eslint": "^8",
