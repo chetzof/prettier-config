@@ -46,5 +46,4 @@ jspm_packages/
 /lib
 /dist/
 !/.eslintrc.json
-!/./packemon.config.ts
 /.idea
