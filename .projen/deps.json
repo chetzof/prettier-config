@@ -2,7 +2,7 @@
   "dependencies": [
     {
       "name": "@types/node",
-      "version": "^16",
+      "version": "^18",
       "type": "build"
     },
     {
@@ -30,7 +30,8 @@
       "type": "build"
     },
     {
-      "name": "eslint-import-resolver-node",
+      "name": "constructs",
+      "version": "^10.0.0",
       "type": "build"
     },
     {
@@ -40,11 +41,6 @@
     {
       "name": "eslint",
       "version": "^8",
-      "type": "build"
-    },
-    {
-      "name": "npm-check-updates",
-      "version": "^16",
       "type": "build"
     },
     {
@@ -72,7 +68,7 @@
     },
     {
       "name": "tsx",
-      "version": "^3",
+      "version": "^4",
       "type": "build"
     },
     {
