@@ -2,7 +2,7 @@
   "name": "@vladcos/prettier-config",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vladcosorg/eslint-config"
+    "url": "https://github.com/vladcosorg/prettier-config"
   },
   "scripts": {
     "build": "npx projen build",
