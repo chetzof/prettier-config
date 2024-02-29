@@ -7,7 +7,9 @@ const project = new TypeScriptProject({
   projenrcTs: true,
   releaseToNpm: true,
   mutableBuild: true,
-  packemon: false
+  packemon: false,
+  projenDevDependency: false,
+  repository: 'https://github.com/vladcosorg/eslint-config',
 })
 project.compileTask.reset(
   `mkdir ${project.libdir} &&  cp src/index.js  ${project.libdir}/index.js`,
