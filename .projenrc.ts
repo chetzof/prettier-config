@@ -1,6 +1,11 @@
 import { TypeScriptProject } from '@vladcos/projen-base'
 
-const project = new TypeScriptProject({
+const project = new (class extends TypeScriptProject {
+  override preSynthesize() {
+    super.preSynthesize()
+    project.package.addField('prettier', './src/index.js')
+  }
+})({
   defaultReleaseBranch: 'main',
   devDeps: ['@vladcos/projen-base'],
   name: '@vladcos/prettier-config',
@@ -11,9 +16,9 @@ const project = new TypeScriptProject({
   projenDevDependency: false,
   repository: 'https://github.com/vladcosorg/prettier-config',
 })
+
 project.compileTask.reset(
   `mkdir ${project.libdir} &&  cp src/index.js  ${project.libdir}/index.js`,
 )
-project.package.addField('prettier', './src/index.js')
 
 project.synth()
