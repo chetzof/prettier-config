@@ -1,5 +1,9 @@
 {
   "name": "@vladcos/prettier-config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vladcosorg/eslint-config"
+  },
   "scripts": {
     "build": "npx projen build",
     "bump": "npx projen bump",
@@ -24,14 +28,12 @@
     "@types/node": "^18",
     "@typescript-eslint/eslint-plugin": "^6",
     "@typescript-eslint/parser": "^6",
-    "@vladcos/eslint-config": "^0.0.29",
+    "@vladcos/eslint-config": "^0.0.34",
     "@vladcos/projen-base": "^0.0.182",
     "@vladcos/tsconfig": "^0.0.25",
-    "constructs": "^10.0.0",
     "eslint": "^8",
     "eslint-import-resolver-typescript": "^3.6.1",
     "prettier": "^3",
-    "projen": "0.79.27",
     "standard-version": "^9",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4",
